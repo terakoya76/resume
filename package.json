@@ -1,0 +1,20 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "textlint README.md",
+    "fix": "textlint --fix README.md",
+    "pdf": "md-to-pdf README.md --config-file md-to-pdf.json",
+    "postpdf": "mv README.pdf resume.pdf"
+  },
+  "dependencies": {
+    "md-to-pdf": "^5.2.1",
+    "prh": "^5.4.4",
+    "textlint": "^13.1.0",
+    "textlint-rule-preset-japanese": "^7.0.0"
+  },
+  "devDependencies": {
+    "textlint-rule-prh": "^5.3.0"
+  }
+}

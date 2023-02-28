@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "preset-japanese": {
+      "sentence-length": {
+        "max": 201
+      }
+    },
+    "prh": {
+       "rulePaths" :["./prh.yml"]
+    }
+  },
+  "plugins": [
+  ]
+}
