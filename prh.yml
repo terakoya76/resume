@@ -1,0 +1,58 @@
+version: 1
+
+# 本ファイルは設定の仕方の見本であり、実用的な校正ルールではありません。
+# もし、もっと充実した別のルールを使いたい時は以下のURLを参照してください。
+# https://github.com/prh/rules
+# おすすめは media/techbooster.yml です。
+
+# 下記の説明を参考に、git submoduleとimportsを使って参照するのがよいでしょう。
+# リポジトリの設定 git submodule add https://github.com/prh/rules.git prh-rules
+
+# 別の設定ファイルを読み込み、mergeすることもできます。
+imports:
+  - path: ./prh-rules/media/WEB+DB_PRESS.yml
+    disableImports: true
+    ignoreRules:
+      - expected: $1マスタ$2
+      - expected: CloudFlare
+  - path: ./prh-rules/files/markdown.yml
+  - path: ./prh-rules/files/review.yml
+
+  # imports にはいくつかのオプションが指定できる
+  # - path: other-rules.yml
+    # 連鎖的なimportを禁止する
+    # disableImports: true
+    # importするルールで不都合なものは殺すことができる
+    # patternやexpectedに指定する文字列は --rules-yaml で得られるパース後の表現を使うこと
+    # ignoreRules:
+      # pattern: /a/ と等価
+      # - /a/
+      # - pattern:  /a/
+      # - expected: /b/
+
+rules:
+  - expected: マイクロサービス
+    pattern: "/[Mm]icro?-[Ss]ervice/g"
+  - expected: Kubernetes
+    pattern: "/[Kk]8[Ss]/g"
+  - expected: バージョン
+    pattern: "/[Vv]ersion/g"
+  - expected: アップデート
+    pattern: "/[Uu]pdate/g"
+  - expected: マスタ
+    pattern:
+      - "/[Mm]aster /g"
+      - "/マスター/g"
+  - expected: Circle CI
+    pattern: "/[Cc]ircle[Cc][Ii]/g"
+    options:
+      wordBoundary: true
+  - expected: GitHub
+  - expected: Cloudflare
+  - expected: Terraform
+  - expected: Node.js
+    pattern: "/[Nn]ode[Jj][Ss]/g"
+  - expected: React.js
+    pattern: "/[Rr]eact[Jj][Ss]/g"
+  - expected: Vue.js
+    pattern: "/[Vv]ue[Jj][Ss]/g"
