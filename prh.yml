@@ -47,9 +47,13 @@ rules:
     pattern: "/[Cc]ircle[Cc][Ii]/g"
     options:
       wordBoundary: true
+  - expected: RDBMS
+    pattern: "/[Rr][Dd][Bb][Mm]?[Ss]?/g"
   - expected: GitHub
   - expected: Cloudflare
   - expected: Terraform
+  - expected: Datadog
+  - expected: NewRelic
   - expected: Node.js
     pattern: "/[Nn]ode[Jj][Ss]/g"
   - expected: React.js
