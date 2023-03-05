@@ -1,6 +1,6 @@
 # 職務経歴書
 
-2023年3月2日現在
+2023年3月5日現在
 
 Hajime Terasawa (@terakoya76）
 
@@ -124,7 +124,7 @@ Hajime Terasawa (@terakoya76）
   * Swaggerを用いた従業員情報Public APIの実装
   * 他社サービス間とのPublic API連携
   * Ruby on Railsモノリスである自社会計サービスとの給与連携機能の実装
-  * Mackrel, NewRelicによる監視
+  * Mackrel, NewRelic, Kibanaによる監視
 
 #### 会計サービス: Growth Engineer
 
