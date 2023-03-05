@@ -1,10 +1,10 @@
 # 職務経歴書
 
-2023年3月2日現在
+2023年3月5日現在
 
-Hajime Terasawa (@terakoya76）
+Hajime Terasawa (@terakoya76)
 
-1993年生まれ 神奈川県在住
+1993年生まれ神奈川県在住
 
 * Twitter https://twitter.com/terakoya76
 * GitHub https://github.com/terakoya76
@@ -15,22 +15,22 @@ Hajime Terasawa (@terakoya76）
 ## できること
 
 * フロントエンド開発
-  * jQuery, React.js, Vue.js等の経験
+  * jQuery/React.js/Vue.js等の経験
 * バックエンド開発
-  * Ruby, Go, Node.js等のプログラミング言語の経験
-* WebアプリケーションにおけるSRE, DevOps
+  * Ruby/Go/Node.js等のプログラミング言語の経験
+* WebアプリケーションにおけるSRE/DevOps
   * GitHub等を用いた開発プロジェクトの管理
-  * Circle CI, GitHub Actions, AWS CodeBuild, Jenkins等を用いたCI環境の構築・運用
-  * Circle CI, GitHub Actions, AWS CodeDeploy, Jenkins, ArgoCD等を用いたCD環境の構築・運用
+  * Circle CI/GitHub Actions/AWS CodeBuild/Jenkins等を用いたCI環境の構築・運用
+  * Circle CI/GitHub Actions/AWS CodeDeploy/Jenkins/ArgoCD等を用いたCD環境の構築・運用
   * アプリケーションをまたいだ問題解決とプロジェクト推進
-  * Mackerel, NewRelic, Datadog等を用いた監視体制の構築・運用
+  * Mackerel/NewRelic/Datadog等を用いた監視体制の構築・運用
   * SLIの決定と実装、SLOの策定
   * 障害対応およびポストモーテムの実施
   * 全体的な開発チームのサポート
 * インフラ・ミドルウェアの構築・運用
   * ネットワークやインフラ技術の基礎的な知識
-  * Terraform、Ansibleを使ったIaCによる構成管理の環境の構築・運用
-  * Docker, Kubernetesの構築運用
+  * Terraform/nsibleを使ったIaCによる構成管理の環境の構築・運用
+  * Docker/Kubernetesの構築・運用
   * MySQL等のRDBMSの設計・運用
   * 小規模から大規模までのAWS活用
 * その他
@@ -51,15 +51,15 @@ Hajime Terasawa (@terakoya76）
 
 * セキュリティ投資計画策定
 * 踏み台サーバの構築
-  * STNS, google-authenticatorで実装
-  * 後にSTNS, Cloudflare Accessへ置き換え
+  * STNS/google-authenticatorで実装
+  * 後にSTNS/Cloudflare Accessへ置き換え
 * 脆弱性スキャン構築・運用
 * VPSベースのマイクロサービスアーキテクチャの耐障害性対応
   * nginxによるAPサーバ冗長化
   * pgpool2によるPostgreSQL HA構成構築
 * バックエンドサービス群の一部AWS移行設計・実施
   * Nameserver Cloudflare移行
-  * Terraform導入・運用
+  * terraform導入・運用
   * 移行計画策定
   * DB単体でのAWS移行
   * AMI Build Pipeline整備
@@ -79,28 +79,28 @@ Hajime Terasawa (@terakoya76）
 2019年08月〜2022年05月
 
 * EC2ベースのRuby on Railsサービスのロールバック高速化
-  * 社内のRuby on Railsサービス全体にCapistranoを利用した高速ロールバックを実装
+  * 社内のRuby on Railsサービス全体にCapistranoを利用した高速ロールバックを開発
   * Jenkinsサーバのメンテナンス
 * Ruby on Railsサービス全体のRubyバージョンアップデート計画・実施
 * EKS Cluster Blue/Greenバージョンアップデート計画・実施
-  * 合わせてCircle CI, Helm, Helmfileを利用したデプロイ機構に共通化
+  * 合わせてCircle CI/Helm/Helmfileを利用したデプロイ機構に共通化
 * マイクロサービス連携基盤としてのメッセージング基盤PoC
-  * Transactional Outbox Pattern, Protobuf, AWS Kinesisを採用したCDC基盤をPoC
+  * Transactional Outbox Pattern/Protobuf/AWS Kinesisを採用したCDC基盤をPoC
 * EC2ベースの人事労務サービスのEKS移行
   * 今後の移行プロジェクトに備え、社内共通で利用できるMulti-Role用Helmパッケージ、パラメータセットを設計・導入、既存プロジェクト含めて標準化
 * RDBMS負荷対策としてPerformance Monitoringのしくみを整備
-  * MySQL sys-schema, perf-schema, info-schema, slow-logを対象とした時系列DBをAWS S3, Athena, Datadogを利用し構築・運用
+  * MySQL sys-schema/perf-schema/info-schema/slow-log等を対象としたとき系列DBをS3/AWS Athena/datadogを利用し構築・運用
 * Capacity Planning
 * 会計サービスDBの負荷対策
   * Reader ScalingのためAurora MySQLへの移行の移行設計・実施
-  * Aurora MySQLへの移行に向け、MySQL Master-Switchover用のツールを実装・運用
+  * Aurora MySQLへの移行に向け、MySQL Master-Switchover用のツールを開発・運用
   * Ruby on Rails Slow Query対策
   * 開発チームへのPerformance Review文化の浸透
   * Writer Horizontal Scaling戦略の検討評価、および実施の合意形成
 * そのほかDB管理
-  * MySQL, Redis, ElasticSearch, DynamoDBのインスタンスタイプ、監視、パラメータセットを標準化
+  * MySQL/Redis/ElasticSearch/DynamoDBのインスタンスタイプ、監視、パラメータセットを標準化
   * MySQL 56からのアップデート、およびライフサイクル管理ポリシー策定
-* SLOの実装・導入
+* SLOの導入
 * 4-5名チームのリードエンジニアを担当
   * チームビルディング
   * OKR設定
@@ -115,16 +115,16 @@ Hajime Terasawa (@terakoya76）
 * 組織構造マスタマイクロサービスの開発・運用
   * Goによるマイクロサービス開発
   * Ruby on Railsモノリスである自社人事労務サービス給与計算モジュールとの連携機能の開発
-  * モノリス間との重複管理データの同期機構を開発
-  * Circle CI, CodeDeploy, Kustomizeを利用したKubernetes Clusterへのデプロイパイプライン整備
+  * モノリス間との重複管理データ同期機構の開発
+  * Circle CI/CodeDeploy/Kustomizeを利用したKubernetes Clusterへのデプロイパイプライン整備
   * Kubernetes上でのサービス運用
   * Self-Host Kubernetes ClusterからEKSへのサービス移行
   * ワークフローマイクロサービスとの連携開発サポート
 * Ruby on Railsによる人事労務サービス開発
-  * Swaggerを用いた従業員情報Public APIの実装
+  * Swaggerを用いた従業員情報Public APIの開発
   * 他社サービス間とのPublic API連携
-  * Ruby on Railsモノリスである自社会計サービスとの給与連携機能の実装
-  * Mackrel, NewRelicによる監視
+  * Ruby on Railsモノリスである自社会計サービスとの給与連携機能の開発
+  * Mackrel/newRelic/Kibanaによる監視
 
 #### 会計サービス: Growth Engineer
 
@@ -138,4 +138,4 @@ Hajime Terasawa (@terakoya76）
 
 ## 学歴
 
-* 2017年9月 早稲田大学政治経済学部　政治学科 卒業
+* 2017年9月早稲田大学政治経済学部　政治学科卒業
