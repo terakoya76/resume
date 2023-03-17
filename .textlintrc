@@ -25,7 +25,7 @@
     "write-good": true,
 
     # for japanese
-    "ja-hiragana-keishikimeishi": true,
+    # "ja-hiragana-keishikimeishi": true,
     "ja-hiragana-fukushi": true,
     "ja-hiragana-hojodoushi": true,
     "ja-no-orthographic-variants": true,

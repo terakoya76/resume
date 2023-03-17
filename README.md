@@ -1,6 +1,6 @@
 # 職務経歴書
 
-2023年3月5日現在
+2023年3月17日現在
 
 Hajime Terasawa (@terakoya76)
 
@@ -87,9 +87,9 @@ Hajime Terasawa (@terakoya76)
 * マイクロサービス連携基盤としてのメッセージング基盤PoC
   * Transactional Outbox Pattern/Protobuf/AWS Kinesisを採用したCDC基盤をPoC
 * EC2ベースの人事労務サービスのEKS移行
-  * 今後の移行プロジェクトに備え、社内共通で利用できるMulti-Role用Helmパッケージ、パラメータセットを設計・導入、既存プロジェクト含めて標準化
+  * 今後の移行プロジェクトに備え、社内共通で利用できるMulti-Role用Helmパッケージ、パラメータセットを設計・導入、既存プロジェクトも含めて標準化
 * RDBMS負荷対策としてPerformance Monitoringのしくみを整備
-  * MySQL sys-schema/perf-schema/info-schema/slow-log等を対象としたとき系列DBをS3/AWS Athena/datadogを利用し構築・運用
+  * MySQL sys-schema/perf-schema/info-schema/slow-log等を対象とした時系列DBをS3/AWS Athena/datadogを利用し構築・運用
 * Capacity Planning
 * 会計サービスDBの負荷対策
   * Reader ScalingのためAurora MySQLへの移行の移行設計・実施
