@@ -6,7 +6,7 @@ Hajime Terasawa (@terakoya76)
 
 1993年生まれ神奈川県在住
 
-* Twitter https://twitter.com/terakoya76
+* Twitter `https://twitter.com/terakoya76`
 * GitHub https://github.com/terakoya76
 * Blog https://medium.com/@terako.studio
 * Email `terako.studio(at)gmail.com`
