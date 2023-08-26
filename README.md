@@ -1,6 +1,6 @@
 # 職務経歴書
 
-2023年3月17日現在
+2023年8月26日現在
 
 Hajime Terasawa (@terakoya76)
 
@@ -14,58 +14,94 @@ Hajime Terasawa (@terakoya76)
 
 ## できること
 
-* フロントエンド開発
-  * jQuery/React.js/Vue.js等の経験
-* バックエンド開発
-  * Ruby/Go/Node.js等のプログラミング言語の経験
 * WebアプリケーションにおけるSRE/DevOps
-  * GitHub等を用いた開発プロジェクトの管理
-  * Circle CI/GitHub Actions/AWS CodeBuild/Jenkins等を用いたCI環境の構築・運用
-  * Circle CI/GitHub Actions/AWS CodeDeploy/Jenkins/ArgoCD等を用いたCD環境の構築・運用
   * アプリケーションをまたいだ問題解決とプロジェクト推進
-  * Mackerel/NewRelic/Datadog等を用いた監視体制の構築・運用
-  * SLIの決定と実装、SLOの策定
-  * 障害対応およびポストモーテムの実施
-  * 全体的な開発チームのサポート
+    * 関係構築、基盤の導入支援およびセルフサービス化
+  * 信頼性向上に向けた業務プロセス改善
+    * SLI/SLOの設計・運用、および導入推進
+    * Terraform/Ansible等のIaCによる構成管理・変更管理の導入・運用
+    * Mackerel/NewRelic/Datadog等を用いた監視体制の設計・運用
+    * 障害対応およびポストモーテムの設計・運用、および導入推進
+  * 運用業務の自動化
+    * 課題発見/設計/実装
+  * CI/CD環境の構築・運用
 * インフラ・ミドルウェアの構築・運用
   * ネットワークやインフラ技術の基礎的な知識
-  * Terraform/nsibleを使ったIaCによる構成管理の環境の構築・運用
   * Docker/Kubernetesの構築・運用
   * MySQL等のRDBMSの設計・運用
   * 小規模から大規模までのAWS活用
+  * 小規模のGCP活用
+* バックエンド開発
+  * Ruby/Go/Node.js等のプログラミング言語の経験
 * その他
   * GitHubやドキュメントツール、Slack等による非同期コミュニケーション
-  * 職種や技術領域をまたいだ、全体最適を目指した問題解決のアプローチ、およびその推進
+  * 職種や技術領域をまたいだ、全体最適を目指した問題解決
   * 5人規模のチームのチームビルティング、開発計画策定、技術選定、プロジェクトマネジメント
 
 
 ## 職務経歴
 
+### （株）Toreta
+
+CTO直下の業務委託として2023年04月〜現在まで勤務（フルリモート勤務）
+
+#### SRE (Infrastructure, Consulting)
+
+2023年04月〜
+
+* IaCによる変更管理の推進
+  * Central CIの整備・自動化
+    * Terraform/Terraform Cloud/Atlantis/GCP CloudRun/GCP CloudBuild/GCP CloudLB
+  * 主要ユースケースに対するTerraformモジュール提供
+* SLOによるサービス品質管理の推進
+  * 開発チームとの関係構築
+  * パイロットプロジェクトの選定・伴走
+  * SLO定義書や振り返りなどのプラクティス啓蒙、参考実装の運用
+* Observability推進
+  * Datadog利用環境の整備・自動化
+    * GCP CloudRun/GCP CloudBuild/GCP CloudLB/Terraform
+  * Datadogのプラクティス啓蒙
+* ガイドライン策定
+  * IaC/SLO/Observability/Tooling
+* Other
+  * EKS Cluster Upgrade
+
 ### （株）obniz
 
-業務委託として2021年12月〜現在まで勤務（フルリモート勤務）
+CTO直下の業務委託として2021年12月〜現在まで勤務（フルリモート勤務）
 
-#### インフラチーム: インフラエンジニア
+#### インフラエンジニア
 
 2021年12月〜
 
-* セキュリティ投資計画策定
-* 踏み台サーバの構築
-  * STNS/google-authenticatorで実装
-  * 後にSTNS/Cloudflare Accessへ置き換え
-* 脆弱性スキャン構築・運用
-* VPSベースのマイクロサービスアーキテクチャの耐障害性対応
-  * nginxによるAPサーバ冗長化
-  * pgpool2によるPostgreSQL HA構成構築
-* バックエンドサービス群の一部AWS移行設計・実施
-  * Nameserver Cloudflare移行
-  * terraform導入・運用
-  * 移行計画策定
-  * DB単体でのAWS移行
-  * AMI Build Pipeline整備
-  * AP系のAWS移行
-* 情報系に対するCloudflare CDN導入
-* NewRelicによる監視整備
+* セキュリティ対策
+  * セキュリティ投資計画策定
+  * 情報系/業務系分離の実施
+  * 踏み台サーバの構築
+    * STNS/google-authenticatorで実装
+    * その後、NSS/Cloudflare Accessに置き換え
+  * 脆弱性スキャン構築・運用
+* 可用性対策
+  * VPSベースのマイクロサービスアーキテクチャの耐障害性対応
+    * nginxによるAPサーバ冗長化
+    * pgpool2によるPostgreSQL HA構成構築
+    * Cloudflare AccessによるMutli-Cloud対応
+  * バックエンドサービス群の一部AWS移行設計・実施
+    * Nameserver Cloudflare移行
+    * 移行計画策定
+    * Cloudflare WarpによるMulti-Cloud対応
+    * DB単体でのAWS移行
+    * AMI Build Pipeline整備
+    * AP系のAWS移行
+  * IaCによる変更管理の導入・運用
+    * Terraform設計・運用
+    * 既存Ansible Playbookの拡充・改善
+  * 情報系に対するCloudflare CDN導入
+  * NewRelicによる監視拡充・ガイドラインの整備・Playbook整備
+* 各種運用業務自動化
+  * GitHub Actions Self-Hosted Runner + AWS OIDC
+    * Deploy,AMI更新
+* クラウド利用コスト最適化
 
 ### freee（株）
 
@@ -74,7 +110,7 @@ Hajime Terasawa (@terakoya76)
 * インターンとして2017年06月〜2017年09月の間勤務
 
 
-#### 基盤チーム: SRE
+#### 基盤チーム: SRE (Kitchen Sink SRE)
 
 2019年08月〜2022年05月
 
