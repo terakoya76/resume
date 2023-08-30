@@ -1,6 +1,6 @@
 # 職務経歴書
 
-2023年8月26日現在
+2023年8月30日現在
 
 Hajime Terasawa (@terakoya76)
 
@@ -20,11 +20,11 @@ Hajime Terasawa (@terakoya76)
   * 信頼性向上に向けた業務プロセス改善
     * SLI/SLOの設計・運用、および導入推進
     * Terraform/Ansible等のIaCによる構成管理・変更管理の導入・運用
+    * CI/CD環境の構築・運用
     * Mackerel/NewRelic/Datadog等を用いた監視体制の設計・運用
     * 障害対応およびポストモーテムの設計・運用、および導入推進
   * 運用業務の自動化
     * 課題発見/設計/実装
-  * CI/CD環境の構築・運用
 * インフラ・ミドルウェアの構築・運用
   * ネットワークやインフラ技術の基礎的な知識
   * Docker/Kubernetesの構築・運用
@@ -50,7 +50,7 @@ CTO直下の業務委託として2023年04月〜現在まで勤務（フルリ�
 2023年04月〜
 
 * IaCによる変更管理の推進
-  * Central CIの整備・自動化
+  * CIの整備・設定自動化
     * Terraform/Terraform Cloud/Atlantis/GCP CloudRun/GCP CloudBuild/GCP CloudLB
   * 主要ユースケースに対するTerraformモジュール提供
 * SLOによるサービス品質管理の推進
@@ -59,12 +59,13 @@ CTO直下の業務委託として2023年04月〜現在まで勤務（フルリ�
   * SLO定義書や振り返りなどのプラクティス啓蒙、参考実装の運用
 * Observability推進
   * Datadog利用環境の整備・自動化
-    * GCP CloudRun/GCP CloudBuild/GCP CloudLB/Terraform
+    * Terraform/GCP CloudRun/GCP CloudBuild/GCP CloudLB
   * Datadogのプラクティス啓蒙
 * ガイドライン策定
   * IaC/SLO/Observability/Tooling
 * Other
   * EKS Cluster Upgrade
+
 
 ### （株）obniz
 
@@ -79,7 +80,7 @@ CTO直下の業務委託として2021年12月〜現在まで勤務（フルリ�
   * 情報系/業務系分離の実施
   * 踏み台サーバの構築
     * STNS/google-authenticatorで実装
-    * その後、NSS/Cloudflare Accessに置き換え
+    * その後、STNS/Cloudflare Accessに置き換え
   * 脆弱性スキャン構築・運用
 * 可用性対策
   * VPSベースのマイクロサービスアーキテクチャの耐障害性対応
@@ -97,18 +98,20 @@ CTO直下の業務委託として2021年12月〜現在まで勤務（フルリ�
     * Terraform設計・運用
     * 既存Ansible Playbookの拡充・改善
   * 情報系に対するCloudflare CDN導入
-  * NewRelicによる監視拡充・ガイドラインの整備・Playbook整備
-* 各種運用業務自動化
-  * GitHub Actions Self-Hosted Runner + AWS OIDC
-    * Deploy,AMI更新
-* クラウド利用コスト最適化
+  * NewRelicによる監視拡充・ガイドラインの整備・Runbook整備
+* Other
+  * PostgreSQLアップデート
+  * 各種運用業務自動化
+    * GitHub Actions Self-Hosted Runner/AWS OIDC
+      * デプロイ、AMI更新
+  * クラウド利用コスト最適化
+
 
 ### freee（株）
 
 2017年06月〜2022年05月の間勤務（2020年よりフルリモート勤務）
 * 正社員として2017年10月〜2022年05月の間勤務
 * インターンとして2017年06月〜2017年09月の間勤務
-
 
 #### 基盤チーム: SRE (Kitchen Sink SRE)
 
@@ -125,8 +128,9 @@ CTO直下の業務委託として2021年12月〜現在まで勤務（フルリ�
 * EC2ベースの人事労務サービスのEKS移行
   * 今後の移行プロジェクトに備え、社内共通で利用できるMulti-Role用Helmパッケージ、パラメータセットを設計・導入、既存プロジェクトも含めて標準化
 * RDBMS負荷対策としてPerformance Monitoringのしくみを整備
-  * MySQL sys-schema/perf-schema/info-schema/slow-log等を対象とした時系列DBをS3/AWS Athena/datadogを利用し構築・運用
+  * MySQL sys-schema/perf-schema/info-schema/slow-log等を対象とした時系列DBをS3/AWS Athena/Datadogを利用し構築・運用
 * Capacity Planning
+* SLOの導入
 * 会計サービスDBの負荷対策
   * Reader ScalingのためAurora MySQLへの移行の移行設計・実施
   * Aurora MySQLへの移行に向け、MySQL Master-Switchover用のツールを開発・運用
@@ -135,8 +139,7 @@ CTO直下の業務委託として2021年12月〜現在まで勤務（フルリ�
   * Writer Horizontal Scaling戦略の検討評価、および実施の合意形成
 * そのほかDB管理
   * MySQL/Redis/ElasticSearch/DynamoDBのインスタンスタイプ、監視、パラメータセットを標準化
-  * MySQL 56からのアップデート、およびライフサイクル管理ポリシー策定
-* SLOの導入
+  * MySQLアップデート、およびライフサイクル管理ポリシー策定
 * 4-5名チームのリードエンジニアを担当
   * チームビルディング
   * OKR設定
@@ -151,8 +154,8 @@ CTO直下の業務委託として2021年12月〜現在まで勤務（フルリ�
 * 組織構造マスタマイクロサービスの開発・運用
   * Goによるマイクロサービス開発
   * Ruby on Railsモノリスである自社人事労務サービス給与計算モジュールとの連携機能の開発
-  * モノリス間との重複管理データ同期機構の開発
-  * Circle CI/CodeDeploy/Kustomizeを利用したKubernetes Clusterへのデプロイパイプライン整備
+  * サービス間の重複管理データ同期機構の開発
+  * Circle CI/AWS Codeデプロイ/Kustomizeを利用したKubernetes Clusterへのデプロイパイプライン整備
   * Kubernetes上でのサービス運用
   * Self-Host Kubernetes ClusterからEKSへのサービス移行
   * ワークフローマイクロサービスとの連携開発サポート
@@ -160,7 +163,7 @@ CTO直下の業務委託として2021年12月〜現在まで勤務（フルリ�
   * Swaggerを用いた従業員情報Public APIの開発
   * 他社サービス間とのPublic API連携
   * Ruby on Railsモノリスである自社会計サービスとの給与連携機能の開発
-  * Mackrel/newRelic/Kibanaによる監視
+  * Mackerel/NewRelic/Kibanaによる監視
 
 #### 会計サービス: Growth Engineer
 

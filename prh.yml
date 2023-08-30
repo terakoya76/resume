@@ -22,6 +22,8 @@ rules:
     pattern:
       - "/[Mm]aster /g"
       - "/マスター/g"
+  - expected: デプロイ
+    pattern: "/[Dd]eploy/g"
   - expected: Circle CI
     pattern: "/[Cc]ircle[Cc][Ii]/g"
     options:
@@ -35,3 +37,15 @@ rules:
     pattern: "/[Rr]eact[Jj][Ss]/g"
   - expected: Vue.js
     pattern: "/[Vv]ue[Jj][Ss]/g"
+  - expected: Datadog
+    pattern: "/[Dd]ata[Dd]og/g"
+  - expected: NewRelic
+    pattern: "/[Nn]ew[Rr]elic/g"
+  - expected: SRE
+    pattern: "/[Ss][Rr][Ee]/g"
+  - expected: SLO
+    pattern: "/[Ss][Ll][Oo](?![Ww])/g"
+  - expected: SLI
+    pattern: "/[Ss][Ll][Ii]/g"
+  - expected: Terraform
+    pattern: "/[Tt]erraform/g"
