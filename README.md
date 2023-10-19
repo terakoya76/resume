@@ -1,6 +1,6 @@
 # 職務経歴書
 
-2023年8月30日現在
+2023年10月19日現在
 
 Hajime Terasawa (@terakoya76)
 
@@ -16,13 +16,17 @@ Hajime Terasawa (@terakoya76)
 
 * WebアプリケーションにおけるSRE/DevOps
   * アプリケーションをまたいだ問題解決とプロジェクト推進
-    * 関係構築、基盤の導入支援およびセルフサービス化
-  * 信頼性向上に向けた業務プロセス改善
+    * 問題提起・ソリューション開発
+    * 各チームとの関係構築
+    * 基盤の導入支援およびセルフサービス化
+  * 信頼性向上に向けたアーキテクチャ/業務プロセス改善
+    * インフラ設計・改善
     * SLI/SLOの設計・運用、および導入推進
     * Terraform/Ansible等のIaCによる構成管理・変更管理の導入・運用
     * CI/CD環境の構築・運用
     * Mackerel/NewRelic/Datadog等を用いた監視体制の設計・運用
     * 障害対応およびポストモーテムの設計・運用、および導入推進
+    * ガイドライン整備
   * 運用業務の自動化
     * 課題発見/設計/実装
 * インフラ・ミドルウェアの構築・運用
@@ -31,6 +35,7 @@ Hajime Terasawa (@terakoya76)
   * MySQL等のRDBMSの設計・運用
   * 小規模から大規模までのAWS活用
   * 小規模のGCP活用
+  * VPS/PaaSを利用した安価なサービス提供
 * バックエンド開発
   * Ruby/Go/Node.js等のプログラミング言語の経験
 * その他
@@ -41,35 +46,50 @@ Hajime Terasawa (@terakoya76)
 
 ## 職務経歴
 
-### （株）Toreta
+### 飲食業界向けB2B SaaS
 
 CTO直下の業務委託として2023年04月〜現在まで勤務（フルリモート勤務）
+
+組織横断的な信頼性向上に向けたしくみづくりがミッション
 
 #### SRE (Infrastructure, Consulting)
 
 2023年04月〜
 
 * IaCによる変更管理の推進
-  * CIの整備・設定自動化
-    * Terraform/Terraform Cloud/Atlantis/GCP CloudRun/GCP CloudBuild/GCP CloudLB
-  * 主要ユースケースに対するTerraformモジュール提供
+  * やったこと
+    * CIの整備・設定自動化
+    * 主要ユースケースに対するTerraformモジュール提供
+    * ガイドライン整備
+  * 利用技術
+    * Terraform/Terraform Cloud/Atlantis
+    * GCP CloudRun/CloudBuild/CloudLB
 * SLOによるサービス品質管理の推進
-  * 開発チームとの関係構築
-  * パイロットプロジェクトの選定・伴走
-  * SLO定義書や振り返りなどのプラクティス啓蒙、参考実装の運用
+  * やったこと
+    * 参考実装として社内サービスのSLO運用
+    * 開発チームとの関係構築
+    * パイロットプロジェクトの開始・伴走
+    * SLO定義書や振り返りなどのプラクティス啓蒙
+  * 利用技術
+    * Datadog
 * Observability推進
-  * Datadog利用環境の整備・自動化
-    * Terraform/GCP CloudRun/GCP CloudBuild/GCP CloudLB
-  * Datadogのプラクティス啓蒙
-* ガイドライン策定
-  * IaC/SLO/Observability/Tooling
+  * やったこと
+    * Datadog利用環境の整備・自動化
+    * ガイドライン整備
+    * ワークショップ実施によるDatadogのプラクティス啓蒙
+  * 利用技術
+    * Auth0/GCP Workload Identity/OIDC Federation
+    * GCP CloudRun/CloudBuild/CloudLB/IaP/
+    * Terraform
 * Other
-  * EKS Cluster Upgrade
+  * AWS EKS Cluster Upgrade
 
 
-### （株）obniz
+### Iot Platform
 
 CTO直下の業務委託として2021年12月〜現在まで勤務（フルリモート勤務）
+
+1人目インフラエンジニアとして、インフラ周りを整理するのがミッション
 
 #### インフラエンジニア
 
@@ -77,34 +97,55 @@ CTO直下の業務委託として2021年12月〜現在まで勤務（フルリ�
 
 * セキュリティ対策
   * セキュリティ投資計画策定
-  * 情報系/業務系分離の実施
-  * 踏み台サーバの構築
-    * STNS/google-authenticatorで実装
-    * その後、STNS/Cloudflare Accessに置き換え
-  * 脆弱性スキャン構築・運用
+  * セキュリティ対策
+    * やったこと
+      * 情報系/業務系分離の計画・実施
+      * 踏み台サーバの構築
+      * 脆弱性スキャン構築・運用
+    * 利用技術
+      * VPS
+      * STNS/google-authenticator/vuls
+      * Cloudflare CDN/Cloudflare Access
+      * AWS ASG/ELB
+      * Ansible/Terraform
 * 可用性対策
   * VPSベースのマイクロサービスアーキテクチャの耐障害性対応
-    * nginxによるAPサーバ冗長化
-    * pgpool2によるPostgreSQL HA構成構築
-    * Cloudflare AccessによるMutli-Cloud対応
-  * バックエンドサービス群の一部AWS移行設計・実施
-    * Nameserver Cloudflare移行
-    * 移行計画策定
-    * Cloudflare WarpによるMulti-Cloud対応
-    * DB単体でのAWS移行
-    * AMI Build Pipeline整備
-    * AP系のAWS移行
-  * IaCによる変更管理の導入・運用
-    * Terraform設計・運用
-    * 既存Ansible Playbookの拡充・改善
-  * 情報系に対するCloudflare CDN導入
-  * NewRelicによる監視拡充・ガイドラインの整備・Runbook整備
+    * やったこと
+      * APサーバ冗長化
+      * PostgreSQL HA化
+      * Mutli-Cloud対応
+    * 利用技術
+      * VPS
+      * nginx/PostgreSQL/pgpool2
+      * Cloudflare Access
+      * Ansible/Terraform/GitHub Actions
+  * バックエンドサービス群の一部AWS移行の計画・実施
+    * やったこと
+      * 移行計画策定
+      * Nameserver移行
+      * 移行過渡期におけるMulti-Cloud対応
+      * DBのAWS移行
+      * AP系のAWS移行
+      * CI/CD整備・自動化
+    * 利用技術
+      * Cloudflare/Cloudflare Warp
+      * AWS RDS(PostgreSQL)/ELB/ASG/EC2 Image Builder
+      * Ansible/Terraform/GitHub Actions
+* 運用の体系化
+  * やったこと
+    * ガイドラインの整備
+    * 監視ルール拡充・Runbook整備
+    * IaCによる変更管理の導入・運用
+    * CI/CD整備
+    * スケールアウトプロセスの標準化・省力化
+  * 利用技術
+    * VPS
+    * NewRelic
+    * Ansible/Terraform/GitHub Actions
 * Other
   * PostgreSQLアップデート
-  * 各種運用業務自動化
-    * GitHub Actions Self-Hosted Runner/AWS OIDC
-      * デプロイ、AMI更新
-  * クラウド利用コスト最適化
+  * クラウド利用コスト最適化、およびプロセスの自動化
+  * 障害対応
 
 
 ### freee（株）
@@ -117,29 +158,52 @@ CTO直下の業務委託として2021年12月〜現在まで勤務（フルリ�
 
 2019年08月〜2022年05月
 
-* EC2ベースのRuby on Railsサービスのロールバック高速化
-  * 社内のRuby on Railsサービス全体にCapistranoを利用した高速ロールバックを開発
-  * Jenkinsサーバのメンテナンス
-* Ruby on Railsサービス全体のRubyバージョンアップデート計画・実施
-* EKS Cluster Blue/Greenバージョンアップデート計画・実施
-  * 合わせてCircle CI/Helm/Helmfileを利用したデプロイ機構に共通化
-* マイクロサービス連携基盤としてのメッセージング基盤PoC
-  * Transactional Outbox Pattern/Protobuf/AWS Kinesisを採用したCDC基盤をPoC
-* EC2ベースの人事労務サービスのEKS移行
-  * 今後の移行プロジェクトに備え、社内共通で利用できるMulti-Role用Helmパッケージ、パラメータセットを設計・導入、既存プロジェクトも含めて標準化
-* RDBMS負荷対策としてPerformance Monitoringのしくみを整備
-  * MySQL sys-schema/perf-schema/info-schema/slow-log等を対象とした時系列DBをS3/AWS Athena/Datadogを利用し構築・運用
-* Capacity Planning
-* SLOの導入
-* 会計サービスDBの負荷対策
-  * Reader ScalingのためAurora MySQLへの移行の移行設計・実施
-  * Aurora MySQLへの移行に向け、MySQL Master-Switchover用のツールを開発・運用
-  * Ruby on Rails Slow Query対策
-  * 開発チームへのPerformance Review文化の浸透
-  * Writer Horizontal Scaling戦略の検討評価、および実施の合意形成
-* そのほかDB管理
-  * MySQL/Redis/ElasticSearch/DynamoDBのインスタンスタイプ、監視、パラメータセットを標準化
-  * MySQLアップデート、およびライフサイクル管理ポリシー策定
+* Ruby on Railsサービス群の保守運用
+  * やったこと
+    * EC2ベースのRuby on Railsサービス群に向け、Capistranoを利用した高速ロールバック機能を開発・導入
+    * Jenkinsメンテナンス
+    * EC2ベースのRuby on Railsサービス群のRubyバージョンアップデート計画・実施
+    * EC2ベースのRuby on RailsモノリスのEKS移行
+    * EKS移行効率化のための、Helmテンプレート、パラメータセットを設計・導入し、既存プロジェクトも含めて標準化した
+    * Capacity Planning
+    * 障害対応
+  * 利用技術
+    * Ruby on Rails
+    * AWS ASG/ELB/RDS(MySQL)/Elasticache(Redis)/OpenSearch/SQS/Lambda/EKS
+    * Jenkins/Capistrano/Packer/Vagrant/Ansible/Terraform/Helm/Helmfile/Circle CI
+    * NewRelic/Mackerel/Datadog
+* EKS Clusterの保守運用
+  * やったこと
+    * Capacity Planning
+    * Blue/Greenバージョンアップデート計画・実施
+    * CI/CDを単純化するため式年遷宮
+  * 利用技術
+    * AWS EKS/ELB/RDS
+    * Helm/Helmfile/Circle CI
+* マイクロサービス連携基盤としてのメッセージング基盤
+  * やったこと
+    * Transactional Outbox Pattern/Protobuf/AWS Kinesisを採用したCDC基盤をPoC
+  * 利用技術
+    * Ruby on Rails/Protobuf/MySQL
+    * AWS KinesisDataStream/SQS/ElasticSearch/
+* DBの運用保守
+  * やったこと
+    * Performance Monitoringのための時系列DB構築・運用
+    * 負荷対策
+      * Reader ScalingのためAurora MySQLへの移行の計画・実施
+      * Aurora MySQLへの移行に向け、MySQL Master-Switchover用のツールを開発・運用
+      * Slow Query対策
+      * Writer Horizontal Scaling戦略の検討評価、および実施の合意形成
+    * サービスへのSLOの導入
+    * 開発チームへのPerformance Review文化の浸透
+    * MySQL/Redis/ElasticSearch/DynamoDBのインスタンスタイプ、監視ルール、パラメータセットを標準化
+    * 各サービスのMySQLバージョンのアップデート
+    * MySQLバージョンのライフサイクル管理ポリシー策定
+  * 利用技術
+    * Ruby on Rails/Go
+    * MySQL sys-schema/perf-schema/info-schema/slow-log
+    * AWS S3/Athena/RDS/Elasticache/OpenSearch/DynamoDB
+    * Datadog
 * 4-5名チームのリードエンジニアを担当
   * チームビルディング
   * OKR設定
@@ -152,27 +216,54 @@ CTO直下の業務委託として2021年12月〜現在まで勤務（フルリ�
 2018年04月〜2019年07月
 
 * 組織構造マスタマイクロサービスの開発・運用
-  * Goによるマイクロサービス開発
-  * Ruby on Railsモノリスである自社人事労務サービス給与計算モジュールとの連携機能の開発
-  * サービス間の重複管理データ同期機構の開発
-  * Circle CI/AWS Codeデプロイ/Kustomizeを利用したKubernetes Clusterへのデプロイパイプライン整備
-  * Kubernetes上でのサービス運用
-  * Self-Host Kubernetes ClusterからEKSへのサービス移行
-  * ワークフローマイクロサービスとの連携開発サポート
+  * やったこと
+    * Goによるマイクロサービス開発
+    * モノリスである人事労務サービスの給与計算モジュールとの連携機能の開発
+    * サービス間の重複管理データ同期機構の開発
+    * CI/CD整備
+    * Kubernetes上でのサービス運用
+    * Self-Host Kubernetes ClusterからEKSへのサービス移行計画・実施
+    * ワークフローマイクロサービスとの連携開発サポート
+  * 利用技術
+    * Go/Ruby on Rails/React.js/Storybook
+    * nginx
+    * AWS EKS/RDS(MySQL)/Elasticache(Redis)/ELB
+    * Circle CI/AWS CodeDeploy/Kustomize
 * Ruby on Railsによる人事労務サービス開発
-  * Swaggerを用いた従業員情報Public APIの開発
-  * 他社サービス間とのPublic API連携
-  * Ruby on Railsモノリスである自社会計サービスとの給与連携機能の開発
-  * Mackerel/NewRelic/Kibanaによる監視
+  * やったこと
+    * 従業員情報Public APIの開発
+    * 他社サービス間とのPublic API連携
+    * モノリスである自社会計サービスとの給与連携機能の開発
+    * 監視ルールの整備・運用
+  * 利用技術
+    * OAuth
+    * Ruby on Rails/Swagger
+    * nginx
+    * Mackerel/NewRelic/Kibana/ElasticSearch
 
 #### 会計サービス: Growth Engineer
 
 2017年10月〜2018年04月
 
-* Redshift/Redashを用いたアクティビティログの分析
 * Ruby on Rails上での各種A/Bテストの設計・実施
+  * やったこと
+    * アクティビティログの分析
+    * テスト計画・実装・評価
+  * 利用技術
+    * Ruby on Rails/CSS/JavaScript
+    * Redshift/Redash
 * Ruby on Rails向けのA/B Testingモジュールの開発
+  * やったこと
+    * 動的なテスト開始終了設定・重み付け管理などの機能を提供するRails Engine Gem開発
+  * 利用技術
+    * Ruby on Rails
+    * MySQL/Redis
 * マーケティングチームがプロダクト上で施策を試しやすくできるしくみを整備
+  * やったこと
+    * マーケティングチームが独立してアフィリエイト配信できるようしくみを開発
+  * 利用技術
+    * JavaScript
+    * Google Tag Manager
 
 
 ## 学歴
