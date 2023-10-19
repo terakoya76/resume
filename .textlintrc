@@ -31,7 +31,7 @@
     "ja-no-orthographic-variants": true,
     "no-mixed-zenkaku-and-hankaku-alphabet": true,
     "prefer-tari-tari": true,
-    "use-si-units": true,
+    "use-si-units": false,
     "@textlint-ja/textlint-rule-no-insert-dropping-sa": true,
     "@textlint-ja/textlint-rule-no-synonyms": true
   },

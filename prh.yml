@@ -6,6 +6,7 @@ imports:
     ignoreRules:
       - expected: $1マスタ$2
       - expected: CloudFlare
+      - expected: エンティティ
   - path: ./node_modules/prh/prh-rules/files/markdown.yml
   - path: ./node_modules/prh/prh-rules/files/review.yml
 
@@ -23,7 +24,12 @@ rules:
       - "/[Mm]aster /g"
       - "/マスター/g"
   - expected: デプロイ
-    pattern: "/[Dd]eploy/g"
+    pattern: "/(?<!Code)[Dd]eploy/g"
+    specs:
+      - from: CodeDeploy
+        to:   CodeDeploy
+      - from: MyDeploy
+        to:   Myデプロイ
   - expected: Circle CI
     pattern: "/[Cc]ircle[Cc][Ii]/g"
     options:
