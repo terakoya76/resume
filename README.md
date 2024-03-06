@@ -1,12 +1,13 @@
 # 職務経歴書
 
-2023年10月19日現在
+2024年03月06日現在
 
 Hajime Terasawa (@terakoya76)
 
 1993年生まれ神奈川県在住
 
 * Twitter `https://twitter.com/terakoya76`
+* Bluesky `https://bsky.app/profile/terakoya76.bsky.social`
 * GitHub https://github.com/terakoya76
 * Blog https://medium.com/@terako.studio
 * Email `terako.studio(at)gmail.com`
@@ -41,16 +42,56 @@ Hajime Terasawa (@terakoya76)
 * その他
   * GitHubやドキュメントツール、Slack等による非同期コミュニケーション
   * 職種や技術領域をまたいだ、全体最適を目指した問題解決
-  * 5人規模のチームのチームビルティング、開発計画策定、技術選定、プロジェクトマネジメント
+  * チームビルティング、開発計画策定、技術選定、プロジェクトマネジメント
 
 
 ## 職務経歴
+
+### 世界史Database
+
+業務委託として2023年12月から現在まで勤務（フルリモート勤務）
+
+データ品質を向上させる枠組みづくりがミッション
+
+#### SWE
+
+2023年12月〜
+
+* IaCによる変更管理の推進
+  * やったこと
+    * CIの整備・設定自動化
+  * 利用技術
+    * Terraform/Digger
+* Data分析基盤の設計・構築
+  * やったこと
+    * RDSの日時スナップショットをData Lakeを経由し、DWHに連携するしくみの構築
+  * 利用技術
+    * Terraform
+    * S3(Lake)/Snowflake(DWH)/ETL(ECS/dbt)
+* その他
+  * RDS証明書更新
+
+
+### 医療DX
+
+受託制作
+
+ユーザーテストに向けた医療DXサービスのプロトタイプ制作
+
+#### SWE
+
+2023年12月〜2024年2月
+
+* ユーザーテストに向けた医療DXサービスのプロトタイプ制作
+  * 利用技術
+    * Swift/SwiftUI/HealthKit/Firebase Authentication/Firebase Storage/GAS
+
 
 ### 飲食業界向けB2B SaaS
 
 CTO直下の業務委託として2023年04月〜現在まで勤務（フルリモート勤務）
 
-組織横断的な信頼性向上に向けたしくみづくりがミッション
+各マイクロサービス開発チームが `You build it, you run it` を実践できるよう、しくみを整備することがミッション
 
 #### SRE (Infrastructure, Consulting)
 
@@ -62,38 +103,42 @@ CTO直下の業務委託として2023年04月〜現在まで勤務（フルリ�
     * 主要ユースケースに対するTerraformモジュール提供
     * ガイドライン整備
   * 利用技術
-    * Terraform/Terraform Cloud/Atlantis
-    * GCP CloudRun/CloudBuild/CloudLB
+    * IaC: Terraform/Terraform Cloud/Atlantis
+    * Infra: GCP CloudRun/CloudBuild/CloudLB
 * SLOによるサービス品質管理の推進
   * やったこと
     * 参考実装として社内サービスのSLO運用
     * 開発チームとの関係構築
     * パイロットプロジェクトの開始・伴走
     * SLO定義書や振り返りなどのプラクティス啓蒙
+    * 設定状況のチェック/レポート
   * 利用技術
-    * Datadog
+    * SaaS: Datadog
 * Observability推進
   * やったこと
     * Datadog利用環境の整備・自動化
-    * ガイドライン整備
+    * SaaS系ガイドライン整備
     * ワークショップ実施によるDatadogのプラクティス啓蒙
   * 利用技術
-    * Auth0/GCP Workload Identity/OIDC Federation
-    * GCP CloudRun/CloudBuild/CloudLB/IaP/
-    * Terraform
-* Other
+    * Infra: GCP CloudRun/CloudBuild/CloudLB
+    * Auth: Auth0/GCP Workload Identity/OIDC Federation
+* そのほか球拾い
   * AWS EKS Cluster Upgrade
+  * メール認証周り（SPF/DKIM/DMARC）
+  * Legacy Monolithの考古学・ドキュメント作成・保守作業
+  * 情シスチームへのアカウント管理業務の移管
+  * Cloudコスト最適化
 
 
-### Iot Platform
+### IoT Platform
 
-CTO直下の業務委託として2021年12月〜現在まで勤務（フルリモート勤務）
+CTO直下の業務委託として2021年12月〜2023年10月の間勤務（フルリモート勤務）
 
 1人目インフラエンジニアとして、インフラ周りを整理するのがミッション
 
 #### インフラエンジニア
 
-2021年12月〜
+2021年12月〜2023年10月
 
 * セキュリティ対策
   * セキュリティ投資計画策定
@@ -145,6 +190,7 @@ CTO直下の業務委託として2021年12月〜現在まで勤務（フルリ�
 * Other
   * PostgreSQLアップデート
   * クラウド利用コスト最適化、およびプロセスの自動化
+  * メール認証周り（SPF/DKIM）
   * 障害対応
 
 
