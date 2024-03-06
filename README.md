@@ -85,8 +85,8 @@ Hajime Terasawa (@terakoya76)
 
 * ユーザーテストに向けた医療DXサービスのプロトタイプ制作
   * やったこと
-   * やりたいことをヒアリングし、そこから要件を定義
-   * 機能・コストを最小化した設計・実装
+    * やりたいことをヒアリングし、そこから要件定義
+    * 機能・コストを最小化した設計・実装
   * 利用技術
     * Swift/SwiftUI/HealthKit/Firebase Authentication/Firebase Storage/GAS
 
