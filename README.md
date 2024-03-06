@@ -38,6 +38,7 @@ Hajime Terasawa (@terakoya76)
   * 小規模のGCP活用
   * VPS/PaaSを利用した安価なサービス提供
 * バックエンド開発
+  * 要件定義
   * Ruby/Go/Node.js等のプログラミング言語の経験
 * その他
   * GitHubやドキュメントツール、Slack等による非同期コミュニケーション
@@ -62,12 +63,12 @@ Hajime Terasawa (@terakoya76)
     * CIの整備・設定自動化
   * 利用技術
     * Terraform/Digger
-* Data分析基盤の設計・構築
+* データ分析基盤の設計・構築
   * やったこと
-    * RDSの日時スナップショットをData Lakeを経由し、DWHに連携するしくみの構築
+    * DBの日時スナップショットを、Data Lakeを経由してDWHに連携するしくみの構築
   * 利用技術
     * Terraform
-    * S3(Lake)/Snowflake(DWH)/ETL(ECS/dbt)
+    * AWS RDS(Golden Source)/AWS S3(Lake)/Snowflake(DWH)/ETL(AWS ECS/dbt)
 * その他
   * RDS証明書更新
 
@@ -83,6 +84,9 @@ Hajime Terasawa (@terakoya76)
 2023年12月〜2024年2月
 
 * ユーザーテストに向けた医療DXサービスのプロトタイプ制作
+  * やったこと
+   * やりたいことをヒアリングし、そこから要件を定義
+   * 機能・コストを最小化した設計・実装
   * 利用技術
     * Swift/SwiftUI/HealthKit/Firebase Authentication/Firebase Storage/GAS
 
