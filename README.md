@@ -69,7 +69,7 @@ Hajime Terasawa (@terakoya76)
   * 利用技術
     * Terraform
     * AWS RDS(Golden Source)/AWS S3(Lake)/Snowflake(DWH)/ETL(AWS ECS/dbt)
-* その他
+* Other
   * RDS証明書更新
 
 
@@ -126,7 +126,7 @@ CTO直下の業務委託として2023年04月〜現在まで勤務（フルリ�
   * 利用技術
     * Infra: GCP CloudRun/CloudBuild/CloudLB
     * Auth: Auth0/GCP Workload Identity/OIDC Federation
-* そのほか球拾い
+* Other
   * AWS EKS Cluster Upgrade
   * メール認証周り（SPF/DKIM/DMARC）
   * Legacy Monolithの考古学・ドキュメント作成・保守作業
