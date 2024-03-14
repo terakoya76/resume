@@ -23,13 +23,13 @@ Hajime Terasawa (@terakoya76)
   * 信頼性向上に向けたアーキテクチャ/業務プロセス改善
     * インフラ設計・改善
     * SLI/SLOの設計・運用、および導入推進
-    * Terraform/Ansible等のIaCによる構成管理・変更管理の導入・運用
+    * IaCによる構成管理・変更管理の導入・運用
     * CI/CD環境の構築・運用
-    * Mackerel/NewRelic/Datadog等を用いた監視体制の設計・運用
+    * 監視体制の設計・運用
     * 障害対応およびポストモーテムの設計・運用、および導入推進
     * ガイドライン整備
   * 運用業務の自動化
-    * 課題発見/設計/実装
+    * 可視化/課題発見/設計/実装
 * インフラ・ミドルウェアの構築・運用
   * ネットワークやインフラ技術の基礎的な知識
   * Docker/Kubernetesの構築・運用
@@ -38,7 +38,7 @@ Hajime Terasawa (@terakoya76)
   * 小規模のGCP活用
   * VPS/PaaSを利用した安価なサービス提供
 * バックエンド開発
-  * 要件定義
+  * 要件定義・実装
   * Ruby/Go/Node.js等のプログラミング言語の経験
 * その他
   * GitHubやドキュメントツール、Slack等による非同期コミュニケーション
@@ -60,17 +60,17 @@ Hajime Terasawa (@terakoya76)
 
 * IaCによる変更管理の推進
   * やったこと
-    * CIの整備・設定自動化
+    * MultiCloud/MultiAccountなCIの整備・設定自動化
   * 利用技術
     * Terraform/Digger
 * データ分析基盤の設計・構築
   * やったこと
-    * DBの日時スナップショットを、Data Lakeを経由してDWHに連携するしくみの構築
+    * DBスナップショットを、DataLakeを経由してDWHに連携するしくみの構築
   * 利用技術
     * Terraform
     * AWS RDS(Golden Source)/AWS S3(Lake)/Snowflake(DWH)/ETL(AWS ECS/dbt)
-* Other
-  * RDS証明書更新
+* 保守業務
+  * 証明書更新作業
 
 
 ### 医療DX
@@ -86,9 +86,10 @@ Hajime Terasawa (@terakoya76)
 * ユーザーテストに向けた医療DXサービスのプロトタイプ制作
   * やったこと
     * やりたいことをヒアリングし、そこから要件定義
+    * ユーザー体験を考慮した業務プロセス設計
     * 機能・コストを最小化した設計・実装
   * 利用技術
-    * Swift/SwiftUI/HealthKit/Firebase Authentication/Firebase Storage/GAS
+    * Swift/SwiftUI/HealthKit/Firebase Authentication/GCP CloudStorage/GAS
 
 
 ### 飲食業界向けB2B SaaS
@@ -116,22 +117,21 @@ CTO直下の業務委託として2023年04月〜現在まで勤務（フルリ�
     * パイロットプロジェクトの開始・伴走
     * SLO定義書や振り返りなどのプラクティス啓蒙
     * 設定状況のチェック/レポート
-  * 利用技術
-    * SaaS: Datadog
 * Observability推進
   * やったこと
     * Datadog利用環境の整備・自動化
     * SaaS系ガイドライン整備
+    * 情シスチームへのアカウント管理業務の移管
     * ワークショップ実施によるDatadogのプラクティス啓蒙
+    * 設定状況のチェック/レポート
   * 利用技術
     * Infra: GCP CloudRun/CloudBuild/CloudLB
     * Auth: Auth0/GCP Workload Identity/OIDC Federation
-* Other
+* 保守業務
   * AWS EKS Cluster Upgrade
   * メール認証周り（SPF/DKIM/DMARC）
   * Legacy Monolithの考古学・ドキュメント作成・保守作業
-  * 情シスチームへのアカウント管理業務の移管
-  * Cloudコスト最適化
+  * クラウド利用コスト最適化
 
 
 ### IoT Platform
@@ -191,9 +191,10 @@ CTO直下の業務委託として2021年12月〜2023年10月の間勤務（フ�
     * VPS
     * NewRelic
     * Ansible/Terraform/GitHub Actions
-* Other
+* 保守業務
   * PostgreSQLアップデート
-  * クラウド利用コスト最適化、およびプロセスの自動化
+  * クラウド利用コスト最適化
+  * トイル削減
   * メール認証周り（SPF/DKIM）
   * 障害対応
 
